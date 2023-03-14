@@ -1,5 +1,5 @@
 
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <form method="post" action="{{url('users')}}" class="space-y-8 divide-y bg-white divide-gray-200 px-4 py-5 sm:p-6 shadow sm:overflow-hidden sm:rounded-md">
