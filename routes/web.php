@@ -32,7 +32,7 @@ Route::middleware('auth')->group(function () {
     Route::get('users/{id}/edit', [UserController::class, 'edit']);
     Route::get('users/form', [UserController::class, 'form']);
     Route::post('users', [UserController::class, 'store']);
-    Route::get('users', [UserController::class, 'index']);
+    Route::resource('event', EventController::class);
     Route::resource('event', EventController::class);
 
 });

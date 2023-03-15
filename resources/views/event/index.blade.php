@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<a href="{{url('eventform')}}">
+<a href="{{url('event/create')}}">
     <span class="inline-flex rounded-lg p-3 bg-teal-50 text-teal-700 ring-4 ring-white">
         <i class="fas fa-plus"></i>
     </span>
@@ -22,13 +22,13 @@
       <div>
         <div class="-mt-px flex divide-x divide-gray-200">
           <div class="flex w-0 flex-1">
-            <a href="{{url('event'.$event->id.'/edit')}}" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+            <a href="{{url('event/'.$event->id.'/edit')}}" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
                 <i class="fas fa-edit"></i>
               Edit
             </a>
           </div>
           <div class="-ml-px flex w-0 flex-1">
-              <a onclick="return confirm('Apakah anda ingin menghapus {{$event->name}} ?');" href="{{url('event'.$event->id.'/delete')}}" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+              <a onclick="return confirm('Apakah anda ingin menghapus {{$event->name}} ?');" href="{{url('event/'.$event->id.'/delete')}}" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
                 <i class="fas fa-trash"></i>
                 Delete
               </a>

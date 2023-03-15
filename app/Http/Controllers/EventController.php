@@ -14,7 +14,7 @@ class EventController extends Controller
         return view('event.index', ['events' => $event]);
     }
 
-    public function form()
+    public function create()
     {
         $view = view('event.form');
         $view->event = new Event;
