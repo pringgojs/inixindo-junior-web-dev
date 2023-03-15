@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Event;
 use Illuminate\Http\Request;
 
@@ -26,6 +27,15 @@ class EventController extends Controller
     {
         $view = view('event.form');
         $view->event = Event::findOrFail($id);
+
+        return $view;
+    }
+
+    public function show($id)
+    {
+        $view = view('event.show');
+        $view->event = Event::findOrFail($id);
+        $view->users = User::where('event_id', $id)->paginate(20);
 
         return $view;
     }

@@ -13,7 +13,9 @@
       <div class="flex w-full items-center justify-between space-x-6 p-6">
         <div class="flex-1 truncate">
           <div class="flex items-center space-x-3">
-            <h3 class="truncate text-sm font-medium text-gray-900">{{$event->name}}</h3>
+            <a href="{{url('event/'.$event->id)}}">
+              <h3 class="truncate text-sm font-medium text-gray-900">{{$event->name}}</h3>
+            </a>
             <span class="inline-block flex-shrink-0 rounded-ful bg-green-100  px-2 py-0.5 text-xs font-medium text-green-800">{{$event->date}}</span>
           </div>
           <p class="mt-1 truncate text-sm text-gray-500">{{$event->users->count() ? $event->users->count() . ' Pendaftar' : 'Belum ada pendaftar'}}</p>

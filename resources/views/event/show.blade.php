@@ -1,21 +1,18 @@
 @extends('layouts.admin')
 
 @section('content')
-<a href="{{url('users/create')}}">
-    <span class="inline-flex rounded-lg p-3 bg-teal-50 text-teal-700 ring-4 ring-white">
-        <i class="fas fa-plus"></i>
-    </span>
-</a>
 
-<div class="flex items-center gap-x-4 text-xs pt-5">
-  <time datetime="2020-03-16" class="text-gray-900">Filter: </time>
-  @foreach ($roles as $item)
-  <a href="{{url('users?role_id='.$item->id)}}" class="relative z-10 rounded-full @if($item->id == request()->input('role_id')) bg-green-50 @else bg-gray-50 @endif py-1.5 px-3 font-medium text-gray-600 hover:bg-gray-100">{{$item->name}}</a>
-    
-  @endforeach
-</div>
+<h3 class="text-base font-semibold leading-6 text-gray-900">{{$event->name}}</h3>
+{{ $users->links() }}
 
-{{ $users->appends(request()->all())->links() }}
+@if ($users->count() < 1) 
+<button type="button" class="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+  <i class="fas fa-users"></i>
+  <span class="mt-2 block text-sm font-semibold text-gray-900">Belum ada peserta</span>
+</button>
+
+@endif
+
 
 <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-5">
     @foreach ($users as $user)
