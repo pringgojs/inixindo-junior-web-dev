@@ -18,7 +18,7 @@ class UserController extends Controller
     public function create()
     {
         $view = view('user.form');
-        $view->role = Role::all();
+        $view->roles = Role::all();
         $view->user = new User;
 
         return $view;
@@ -27,7 +27,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $view = view('user.form');
-        $view->role = Role::all();
+        $view->roles = Role::all();
         $view->user = User::findOrFail($id);
 
         return $view;
