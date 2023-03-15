@@ -10,7 +10,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        $user = User::search()->with('role')->orderBy('created_at')->paginate(10);
+        $user = User::search()->with('role')->orderBy('created_at', 'desc')->paginate(10);
         $role = Role::all();
         return view('user.index', ['users' => $user, 'roles' => $role]);
     }

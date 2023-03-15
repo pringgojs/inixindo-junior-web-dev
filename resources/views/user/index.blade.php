@@ -15,6 +15,8 @@
   @endforeach
 </div>
 
+{{ $users->appends(request()->all())->links() }}
+
 <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-5">
     @foreach ($users as $user)
         
@@ -49,6 +51,8 @@
   
     @endforeach
 
+    
     <!-- More people... -->
   </ul>
+  {{ $users->appends(request()->all())->links() }}
 @endsection
