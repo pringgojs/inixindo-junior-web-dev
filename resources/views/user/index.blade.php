@@ -1,11 +1,20 @@
 @extends('layouts.admin')
 
 @section('content')
-<a href="{{url('users/form')}}">
+<a href="{{url('users/create')}}">
     <span class="inline-flex rounded-lg p-3 bg-teal-50 text-teal-700 ring-4 ring-white">
         <i class="fas fa-plus"></i>
     </span>
 </a>
+
+<div class="flex items-center gap-x-4 text-xs pt-5">
+  <time datetime="2020-03-16" class="text-gray-900">Filter: </time>
+  @foreach ($roles as $item)
+  <a href="{{url('users?role_id='.$item->id)}}" class="relative z-10 rounded-full bg-gray-50 py-1.5 px-3 font-medium text-gray-600 hover:bg-gray-100">{{$item->name}}</a>
+    
+  @endforeach
+</div>
+
 <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-5">
     @foreach ($users as $user)
         

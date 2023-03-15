@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Input;
 use App\Models\Role;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
@@ -50,5 +51,12 @@ class User extends Authenticatable
     public function role()
     {
         return $this->belongsTo(Role::class);
+    }
+
+    public function scopeSearch($q)
+    {
+        if (request()->input('role_id')) {
+            $q->where('role_id', request()->input('role_id'));
+        }
     }
 }

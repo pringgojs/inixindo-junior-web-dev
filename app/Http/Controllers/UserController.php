@@ -10,12 +10,12 @@ class UserController extends Controller
 {
     public function index()
     {
-        $user = User::with('role')->orderBy('created_at')->paginate(10);
-
-        return view('user.index', ['users' => $user]);
+        $user = User::search()->with('role')->orderBy('created_at')->paginate(10);
+        $role = Role::all();
+        return view('user.index', ['users' => $user, 'roles' => $role]);
     }
 
-    public function form()
+    public function create()
     {
         $view = view('user.form');
         $view->role = Role::all();
