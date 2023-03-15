@@ -16,7 +16,7 @@
             <h3 class="truncate text-sm font-medium text-gray-900">{{$event->name}}</h3>
             <span class="inline-block flex-shrink-0 rounded-ful bg-green-100  px-2 py-0.5 text-xs font-medium text-green-800">{{$event->date}}</span>
           </div>
-          <p class="mt-1 truncate text-sm text-gray-500">{{$event->description}}</p>
+          <p class="mt-1 truncate text-sm text-gray-500">{{$event->users->count() ? $event->users->count() . ' Pendaftar' : 'Belum ada pendaftar'}}</p>
         </div>
       </div>
       <div>

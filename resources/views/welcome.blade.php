@@ -30,13 +30,13 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex lg:gap-x-12">
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Beranda</a>
             
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Ketentuan Lomba</a>
             
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Hadiah</a>
             
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Sponsor</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                     <a href="{{url('login')}}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
@@ -62,13 +62,13 @@
                     <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
-                        <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+                        <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Beranda</a>
             
-                        <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+                        <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Ketentuan Lomba</a>
             
-                        <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                        <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Hadiah</a>
             
-                        <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                        <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Sponsor</a>
                         </div>
                         <div class="py-6">
                         <a href="#" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
@@ -94,7 +94,7 @@
                 <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                 <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Panduan Pendaftaran Event KMR. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                    Panduan Pendaftaran Event KMR. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>selengkapnya <span aria-hidden="true">&rarr;</span></a>
                     </div>
                 </div>
                 <div class="text-center">
@@ -102,7 +102,7 @@
                     <p class="mt-6 text-lg leading-8 text-gray-600">Ayo, segera persiapkan diri dan ikutlah kegiatan bergengsi era ini. Jangan sampai ketinggalan ya.</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                     <a href="{{url('register')}}" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Register</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Panduan <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
                 </div>

@@ -9,7 +9,7 @@ class EventController extends Controller
 {
     public function index()
     {
-        $event = Event::orderBy('created_at')->get();
+        $event = Event::with(['users'])->orderBy('created_at')->get();
 
         return view('event.index', ['events' => $event]);
     }
