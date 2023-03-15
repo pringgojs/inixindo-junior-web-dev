@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -32,6 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::get('users/form', [UserController::class, 'form']);
     Route::post('users', [UserController::class, 'store']);
     Route::get('users', [UserController::class, 'index']);
+    Route::resource('event', EventController::class);
+
 });
 
 
