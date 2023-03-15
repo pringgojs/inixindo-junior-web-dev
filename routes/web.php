@@ -28,12 +28,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('users/create', [UserController::class, 'form']);
     Route::get('users/{id}/delete', [UserController::class, 'destroy']);
-    Route::get('users/{id}/edit', [UserController::class, 'edit']);
-    Route::get('users/form', [UserController::class, 'form']);
-    Route::post('users', [UserController::class, 'store']);
+    Route::resource('users', UserController::class);
     Route::resource('event', EventController::class);
-    Route::resource('event', EventController::class);
+    Route::get('event/delete/{id}', [EventController::class, 'remove']);
 
 });
 

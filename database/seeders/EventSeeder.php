@@ -15,7 +15,7 @@ class EventSeeder extends Seeder
     public function run(): void
     {
         $data = [
-            'name' => 'Lomba KIR Tingkat Provinsi',
+            'name' => 'Lomba KIR Tingkat Provinsi Jawa Timur XXI',
             'date' => Carbon::now()->addDays(5),
             'description' => 'LKIR atau Lomba Karya Ilmiah Remaja merupakan kegiatan tahunan yang diselenggarakan oleh Lembaga Ilmu Pengetahuan Indonesia (LIPI) sejak tahun 1969. Kegiatan ini bertujuan memotivasi generasi muda, khususnya para pelajar di seluruh Indonesia, untuk melakukan kegiatan penelitian mandiri.
 

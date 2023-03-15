@@ -48,7 +48,7 @@ class EventController extends Controller
         return redirect('event')->with(['success' => 'Berhasil tambah event']);
     }
 
-    public function destroy($id)
+    public function remove($id)
     {
         $model = Event::findOrFail($id);
         $model->delete();

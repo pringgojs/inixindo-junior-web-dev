@@ -28,7 +28,7 @@
             </a>
           </div>
           <div class="-ml-px flex w-0 flex-1">
-              <a onclick="return confirm('Apakah anda ingin menghapus {{$event->name}} ?');" href="{{url('event/'.$event->id.'/delete')}}" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+              <a onclick="return confirm('Apakah anda ingin menghapus {{$event->name}} ?');" href="{{url('event/delete/'.$event->id)}}" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
                 <i class="fas fa-trash"></i>
                 Delete
               </a>
